@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas ordenadas, não ordenadas e de definição</h1>
+    <hr>
+    <h2>Lista dos meus jogos favoritos</h2> 
+        <ul type="disc"> <!--disc, circle, square-->
+            <li>Nintendinho</li>
+                <ol type="1"> <!--1, A, a, I, i-->
+                    <li>Mário Bross</li>
+                        <ul type="square">
+                            <li>Super Mario Bross 3</li>
+                            <li>Mário: Lost Levels</li>
+                        </ul>
+                        <li>Ninja Gaiden</li>
+                        <ul type="square">
+                            <li>Ninja Gaiden</li>
+                        </ul>
+                </ol>                
+       
+            <li>Super Nintendo</li>
+                <ol type="1" start="1"> <!--nesse caso não é necessário o start-->
+                    <li>Super Mário World</li>
+                    <li>Donkey Kong</li>
+                        <ul type="square">
+                            <li>Donkey Kong Country III</li>
+                            <li>Diddy's Kong Quest</li>
+                </ol>
+
+            <li>Playstation I</li>
+                <ol type="1" start="1">
+                    <li>Final Fantasy</li>
+                        <ul type="square">
+                            <li>Final Fantasy VII</li>
+                            <li>Final Fantasy IX</li>
+                        </ul>
+                    <li>Castlevania</li>
+                        <ul type="square">
+                            <li>Simphony of the night</li>
+                        </ul>
+                </ol>
+        </ul>
+ <hr>   
+
+ <h2>Minhas linguagens Favoritas</h2>
+ <ol>
+     <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+        </ol>
+     <li>Novas</li>
+        <ol type="a" start="4"> <!--aqui não se deve utilizar star-->
+            <li>PHP</li>
+            <li>Phython</li>
+            <li>Java Script</li>
+        </ol>
+ </ol>
+ <hr>
+ <h2>Lista de Definições</h2>
+ <dl> <!--Termo mais a descrição-->
+    <dt>HTML</dt> <!--termo-->
+    <dd>Linguagme de marcação para criação do conteúdo de um site</dd> <!--definição-->
+ 
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+</dl>
+</body>
+</html>

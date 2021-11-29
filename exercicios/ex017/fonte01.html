@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body { /* safe combination*/
+            font-family: Arial, Helvetica, sans-serif; /* se o dispositivo não ler arial, tenta helvetica e depois sans-serif*/
+
+            /* Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, % */
+
+            /* RECOMENDAVÉL UAR px E em*/
+            font-size: 16px; /*tamanho padrão. 16px = 1em*/
+        }
+        h1 { /* propriedade SHORTHAND - simplificando em uma única linha*/
+             /* NESTA ORDEM: font-style > font-weight > font-size > font-family*/
+             font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est in mollitia, sapiente autem nesciunt sit. Officia, hic sint magnam quam suscipit velit, temporibus harum aliquam pariatur inventore debitis quae adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quod laborum vero nesciunt ullam asperiores, minima corrupti iusto. Excepturi quo ipsa vitae beatae accusantium iste incidunt consectetur ut aspernatur necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perferendis eveniet voluptates, eaque repellat cupiditate suscipit delectus, ipsum ut dignissimos reprehenderit ducimus cumque facere enim necessitatibus labore repellendus ipsam dicta!</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nemo maxime, cum alias autem, id sed quam quos temporibus rem reprehenderit. Excepturi quibusdam non optio, animi sapiente id neque totam!</p>
+    
+</body>
+</html>

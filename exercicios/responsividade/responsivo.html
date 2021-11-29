@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Rsponsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto; /*centraliza o bloco*/
+        }
+
+        img {
+            width: 100%; /*vai se ajustar a tela e ocupar 100% do tamanho do bloco - nesse caso o body*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi ratione quia quod hic possimus. Earum similique, dolor, debitis itaque eos impedit enim ad, obcaecati quidem ullam tenetur deleniti sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum adipisci inventore provident consequatur quis ex saepe enim, voluptas quod molestiae. Porro, optio sequi. Minus rerum non tempora, architecto deleniti earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus, minus facilis laudantium voluptatum minima maxime ipsam odio illum rem delectus autem tempore repudiandae nemo commodi ducimus cupiditate perspiciatis neque?
+        </p>
+        
+        <picture>
+            <!-- a imagem vai mudar para uma versão menor quando a tela for menor que o MAX-WIDTH -->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi ratione quia quod hic possimus. Earum similique, dolor, debitis itaque eos impedit enim ad, obcaecati quidem ullam tenetur deleniti sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum adipisci inventore provident consequatur quis ex saepe enim, voluptas quod molestiae. Porro, optio sequi. Minus rerum non tempora, architecto deleniti earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus, minus facilis laudantium voluptatum minima maxime ipsam odio illum rem delectus autem tempore repudiandae nemo commodi ducimus cupiditate perspiciatis neque?
+        </p>
+    </main>
+</body>
+</html>

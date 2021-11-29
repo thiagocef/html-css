@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { /*a cor do link*/
+            color: red;
+            text-decoration: none; /*texto sem decoração, no caso sem sublinhado*/
+            font-weight: bold;
+        }
+        /*pseudo-classes definem estados dos elementos*/
+
+        a:hover { /*pseudo-classe - aparece algo ao passar o mouse*/
+            text-decoration: underline; /*o texto ficará sublinado ao passar o mouse*/
+            color: black; /*o texto ficará preto ao passar o mouse*/
+        }
+
+        a:visited { /*pseudo-classo - quando o site já foi visitado, fica dessa cor*/
+            color: darkred;
+        }
+
+        a:active { /*o link ativo ficará em amarelo*/
+            color: yellow;
+        }
+
+        a::after { /*após o elemento vai aparecer algo*/
+            content: ' >>'; /*adiciona conteudo a um elemento existente*/
+            text-decoration: none;
+            font-weight: normal;
+            color: tomato;
+        }
+
+        .especial::after { /*a classe especial recebe um pseudo-elemento*/
+            content: ' >>>>'; /*adiciona o conteudo >>>> após o elemento*/
+            color: silver;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo">Canal YouTube</a></li>
+        <li><a href="https://cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

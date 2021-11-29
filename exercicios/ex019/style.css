@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(123, 185, 123);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: green;
+}
+
+/*em HTML é id = em CSS é # (só pode um elemento por página)*/
+/*em HTML é class = em CSS é . (pode vários elementos por página)*/
+
+/*apenas para um elemento específico*/
+h1#principal {
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+h2 {
+    color: rgb(75, 107, 26);
+}
+
+/*aqui vai pegar a configuração de h2 e juntar com h2.basico */
+/*classe para um ou mais elementos*/
+h2.basico {
+    color: yellow;
+}
+
+/*posso criar uma classe primeiro, e depois aplicar a vários elementos*/
+/*também posso aplicar a qualquer parte do texto*/
+.intermediario {
+    color: rgb(51, 18, 51);
+    
+}
+
+/*é possível aplicar mais de uma classe a um só elemento*/
+.destaque {
+    font-weight: bolder;
+}

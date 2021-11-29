@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(9, 9, 77);
+            width: 800px; /*largura*/
+            margin: auto; /*centraliza automaticamente*/
+        }
+        header { /*configuração do cabeçalho*/
+            background-color: orangered;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav { /*configuração do menu de navegação*/
+            background-color: rgb(9, 9, 77);
+            padding: 10px;
+            box-shadow: 3px 3px 5px rgba(177, 47, 0, 0.685); 
+            /*box-shadow - sombras
+            parâmetros: deslocamento horizontal, deslocamento vertical, espalhamento e cor
+            */
+        }
+        nav > a { /*configuração do a de dentro do nav*/
+            color: white;
+            margin: 50px; /*distancia à direita entre os a*/
+            text-decoration: none;
+            font-weight: bold; /*nome do link em negrito*/
+            
+        }
+        nav > a:hover { /*ao passar o mouse por cima do a (link) que está no nav*/
+            text-decoration: underline;
+        }
+        main { /*configuração do conteúdo principal*/
+            background-color: orangered;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 0px; /*vértices arredondada*/
+        }
+        
+        article { /*configuração do artigo dentro do main*/
+            background-color: rgb(179, 48, 0);
+            padding: 5px;
+            box-shadow: 3px 3px 5px rgba(121, 32, 0, 0.705); /*sombra*/
+        }
+        article > h2 { /*h2 de dentro do article*/
+            color: white;
+        }
+        article > aside { /*configuração do aside de dentro do article*/
+            background-color: rgb(77, 20, 0);
+            color: white;
+            padding: 5px;
+        }
+        footer { /*configuração do rodapé*/
+            background-color: white;
+            color: rgb(9, 9, 77);
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+        }
+        footer > p { /*configuração do p de dentro do footer*/
+            margin: 0px;
+            font-weight: bold; /*font em negrito*/
+        }
+        div#bola {
+            height: 100px; /*altura*/
+            width: 100px; /*largura*/
+            margin: 10px; /*margem*/
+            background-color: orangered;
+            border-radius: 50%; /*forma um circulo - arredondando as vertices*/
+
+            
+        }
+    </style>
+</head>
+<body>
+    <header> <!--tag para o cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav> <!--tag para menu de navegação-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>        
+    </header>
+
+    <main> <!--tag para o conteúdo principal-->
+        <section>
+            <h2>Esportes Política e Tecnologia</h2>
+        </section>
+
+        <section> <!--tag para sessões de assuntos diferentes-->
+            <article> <!--tag para artigos de cada sessão-->
+                <h2>Notícias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, eveniet. Quas vero sint maxime sunt eligendi nostrum aut aspernatur dolorum, distinctio delectus perspiciatis aliquid dolore veniam necessitatibus iusto cupiditate mollitia!</p>
+
+                <aside> <!--tag para conteúdo relativo ai article-->
+                    Escrito por Thiago Cordeiro
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--tag para o rodapé-->
+        <p>Desenvolvido por Thiago Cordeiro</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+
+    <style> /*CSS*/
+        mark{ /*altera a cor de todos os textos onde tiver a tag MARK*/
+            background-color: darkolivegreen;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B(não semântica)</p>
+    
+    <!-- STRONG dá sentido de força ao termo e o destaca -->
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong>usando a tag STRONG (semântica)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usandoa tag I(não semântica)</p>
+
+    <!-- EM dá ênfase ao termo e o destaca -->
+    <p>Nesta frase, temos um <em>termpo em ênfase</em> usando a tag EM(semântica)</p>
+
+    <h2>Texto marcado</h2>
+    <!-- MARK em estilo marca - para mudar a cor é em CSS texto -->
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <!-- MARK para mudar a cor com CSS ficaria assim - usando style= -->
+    
+    <h2>Texto com cor usando style em CSS</h2>
+    <mark style="background-color: rgb(163, 192, 113);">um texto marcado</mark>
+    
+    <!-- o BIG está obsoleto -->
+    <!-- Ex de SMALL: Letras miúdas de um contrato  -->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo</p>
+    
+    <h2>Texto deletado</h2><!-- DEL o texto ficar riscado -->
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido mas não considerado</p>
+    
+    <h2>Texto inserido</h2><!-- INS - o texto fica sublinhado -->
+    <p>Podemos marcar <ins>um texto mostrando que deve ser lido e deve prestar atenção nele</ins> dando ênfase</p>
+
+    <h2>Texto sobrescrito e subscrito</h2>
+    <p>Sobrescrito X<sup>20</sup>+3</p>
+    <p>Subscrito H<sub>2</sub>O</p>
+
+    <h2>Fazer citações</h2> <!--Serão inseridas aspas no sentindo de citações-->
+    <h3>No meio de um parágrafo</h3>
+    <p><q>Ser ou não ser, eis a questão</q></p>
+
+    <h3>Citações longas (em bloco, com parágrafos...)</h3>
+    <p><blockquote>HTML significa Hypertext Markup Language. Ele permite que os usuários criem e estruturem seções, parágrafos, cabeçalhos e links para páginas da internet ou aplicações. O HTML não é uma linguagem de programação, isso significa que não pode ser usado para criar funcionalidades dinâmicas</blockquote></p>
+
+    <h3>Também pode ser inserido link para a citação</h3>
+    <p><blockquote cite="https://hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos">HTML significa Hypertext Markup Language. Ele permite que os usuários criem e estruturem seções, parágrafos, cabeçalhos e links para páginas da internet ou aplicações. O HTML não é uma linguagem de programação, isso <aside>significa</aside> que não pode ser usado para criar funcionalidades dinâmicas</blockquote></p>
+
+    <!-- Com ABBR, ao passar o mouse na sigla, mostra o seu significado -->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>>. <b>Estou adorando!</b></p>
+</body>
+</html>
