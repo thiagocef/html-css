@@ -3,3 +3,5 @@
 
 
 Estou aprendendo a criar sites e agora eu vou gerenciar meus repositórios
+
+<a href="https://thiagocef.github.io/html-css/exercicios/ex001/index.html">Executar o ex001</a>
