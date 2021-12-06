@@ -1,11 +1,24 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'xilosa';
+    src: url('fontes/xilosa_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'xilosa', sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px; /*zerando margem e padding gerais*/
+    
 }
 
 html, body {
+    font-family: var(--font1);
     min-height: 100vh; /*tamanho minimo da altura do corpo*/
     background-color: darkgray;
 }
@@ -16,11 +29,14 @@ header {
     text-align: center;
 }
 header > h1 {
+    font-family: var(--font2);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 6vw;
 }
 header > p {
     padding-bottom: 50px;
+    
 }
 
 header a, footer a {
@@ -37,6 +53,7 @@ section { /*para todas as sections*/
     padding-bottom: 10vh; /*com isso as caixas se adaptam ao tamanho da tela*/
     padding-left: 30px;
     line-height: 2em;
+    font-size: 3.5vw; /*a font se adapta a largura da viewport*/
 }
 
 section.normal {
@@ -50,8 +67,10 @@ section.imagem {
 }
 
 section.imagem > p { /*configurando o P de dentro da caixa section*/
-    width: 400px;
+    display: inline-block; /*a caixa se adapta ao tamanho do conteúdo*/
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.534);
+    
 }
 
 footer {
