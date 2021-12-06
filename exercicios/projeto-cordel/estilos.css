@@ -24,7 +24,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: silver;
-    
 
     height: 100vh;
     text-align: center;
@@ -61,7 +60,20 @@ main {
     max-width: 1350px;
     min-width: 300px;
     position: relative;
-    
+}
+main p {
+    font-family: sans-serif;
+    font-size: 38px;
+    font-style: italic;
+    line-height: 65px; /*espaçamento entre linhas*/
+    padding: 5vh; /*em relação a viewport - viewheight*/
+    width: 80vh;
+    height: 70vh;
+    /*font-size: clamp(2em, 1em + 3vw, 2.5em);*/
+   /* width: 600px; largura da caixa o p*/
+    /*padding: 60px 40px 50px 40px;*/
+    /*max-width: 600px;
+    min-width: 50px;*/
 }
 .content0 {
     background-color: white;
@@ -110,18 +122,7 @@ main {
     max-width: 1350px;
     min-width: 300px;
 }
-main p {
-    font-family: sans-serif;
-    font-size: 45px;
-    /*font-size: clamp(2em, 1em + 3vw, 2.5em);*/
-    font-style: italic;
-    line-height: 65px;
-    width: 600px; /*largura da caixa o p*/
-    padding: 60px 40px 50px 40px;
 
-    max-width: 600px;
-    min-width: 50px;
-}
 #imagem1 {
     height: 100vh;
     background-image: url('imagens/Tom-Alves-casa.jpg');
