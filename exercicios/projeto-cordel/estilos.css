@@ -24,7 +24,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: silver;
-
+    
     height: 100vh;
     text-align: center;
     padding-top: 125px;
@@ -85,15 +85,25 @@ main p {
     min-width: 300px;
 }
 
+.content0 p {
+    background-color: white;
+    max-width: 100%;
+    padding-right: 20px;
+}
+
 .content1 {
     background-color: rgba(10, 10, 10, 0.541);
     padding: 10px 20px ;
     margin-top: 55px;
     
-    
+    max-width: 100%;
     position: absolute;
     left: 3%;    
 }
+ .content1 p {
+     max-width: 100%;
+ }
+
 
 .content1a {
     background-color: rgba(10, 10, 10, 0.541);
@@ -110,17 +120,32 @@ main p {
     margin-top: 2px;
     height: 1100px; 
 
-    max-width: 1350px;
+    max-width: 100%;
     min-width: 300px;
 }
+.content2 p {
+    background-color: white;
+    max-width: 100%;
+    padding-right: 20px;
+}
+
 .content3 {
     background-color: white;
     padding: 20px;
     margin-top: 2px;
     height: 1100px; 
 
+    width: 97%;
+    max-height: 100%;
     max-width: 1350px;
     min-width: 300px;
+}
+
+.content3 p {
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 20px;
 }
 
 #imagem1 {
