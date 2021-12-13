@@ -14,6 +14,8 @@
         table {
             width: 400px;
             border-collapse: collapse; /*as bordas ficam coladas*/
+            width: 100%; /*100% do espaço da tela - ajustável*/
+            text-align: center;
             
         }
 
@@ -21,11 +23,12 @@
             background-color: rgb(171, 211, 189);
         }
 
-        td {
+        tr, td, th {
             border: 0.5px solid black;
             padding: 5px;
+            
         }
-
+        
     </style>
 
 
@@ -35,9 +38,9 @@
 
     <table>
         <tr class="linha"> <!--primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <th>Código</th> <!--titulos das tabelas-->
+            <th>Produto</th>
+            <th>Valor</th>
         </tr>
 
         <tr><!--segunda linha-->
@@ -63,28 +66,37 @@
 
         <table>
             
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-
-            <tr>
-                <td>8</td>
-                <td>9</td>
-            </tr>
-
-            <tr>
-                <td>0</td>
+            <tr class="linha">
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Valor</th>
+                <th>Info.</th>
                 
             </tr>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="imagens/ferrari.png" alt="vaículo ferrari" width="50%">
+                </td>
+                <td>980.000</td>
+                <td><a href="https://www.ferrari.com/en-BR">Veja Mais</a></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Desconto</td> <!--vai ocupar duas linhas-->
+                <td colspan="3">cupom1 -R$5</td> <!--vai ocupar tres colunas-->
+             </tr>
+             
+             <tr>
+                <td colspan="3">cupom2 -R$5</td>
+            </tr>
+
+            <tr>
+                <td>Total</td>
+                <td colspan="3">R$870.000</td> <!--colspan faz a linha ocupar 3 colunas-->
+            </tr>
+            
         </table>
 </body>
 </html>
