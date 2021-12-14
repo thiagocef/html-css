@@ -96,11 +96,13 @@ main p {
     padding: 10px 20px ;
     margin-top: 55px;
     
+    
     max-width: 100%;
     position: absolute;
     left: 3%;    
 }
  .content1 p {
+     width: 100vh;
      max-width: 100%;
  }
 
@@ -112,6 +114,10 @@ main p {
     
     position: absolute;
     left: 3%;    
+}
+
+.content1a p {
+    width: 100vh;
 }
 
 .content2 {
@@ -185,12 +191,20 @@ footer {
 /*=========================================*/
 
 @media (max-width: 600px) {
+    
 
     body {
-        background-color: white; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+        background-color: red; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
         max-width: 100%;
         min-width: 300px;
-       
+        margin-left: -20px;
+        margin-right: -20px;
+        
+        
+    }
+
+    header {
+        margin-right: -20px;
         
     }
 
@@ -200,6 +214,7 @@ footer {
         color: white;
         font-size: 18vw; /*imagem se adapta ao tamanho da tela*/
         margin-top: -80px;
+        
     }
     header > p {
         color: white;
@@ -209,12 +224,14 @@ footer {
     }
     
     main {
-        background-color: white; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
-        margin: 5px;
-        
+        background-color: red; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+        margin: -2px -20px;
+        padding-right: 30px;
         max-width: 1350px;
         min-width: 300px;
         position: relative;
+
+        
     }
 
     main p {
@@ -227,6 +244,44 @@ footer {
         height: 70vh;
 
     }
+
+    footer {
+        margin-right: -20px;
+    }
+
+    .content0 p {
+        padding-top: 120px;
+    }
+
+    .content1, .content1a {
+        width: 380px;
+    }
+    .content1a p {
+        padding-bottom: 35px;
+        width: 90%;
+    }
+    .content1 p {
+        width: 90%;
+    }
+
+    .content2 {
+        margin-bottom: -200px;
+    }
+
+    .content2 p {
+        
+        padding-bottom: 0px;
+    }
+
+    .content3 {
+        width: 96.5vw;
+        
+    }
+    .content3 p {
+        
+        padding-bottom: -70px;
+    }
+    
 
     
 }
