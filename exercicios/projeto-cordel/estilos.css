@@ -161,6 +161,8 @@ main p {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
 }
 
 #imagem2 {
@@ -170,6 +172,8 @@ main p {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);
 }
 #cor {
     color: white;
@@ -194,7 +198,7 @@ footer {
     
 
     body {
-        background-color: red; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+        /*mudar essa cor para se orientar ao testar as caixas/bordas*/
         max-width: 100%;
         min-width: 300px;
         margin-left: -20px;
@@ -224,7 +228,7 @@ footer {
     }
     
     main {
-        background-color: red; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+        /*mudar essa cor para se orientar ao testar as caixas/bordas*/
         margin: -2px -20px;
         padding-right: 30px;
         max-width: 1350px;
