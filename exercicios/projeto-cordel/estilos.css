@@ -102,8 +102,9 @@ main p {
     left: 3%;    
 }
  .content1 p {
-     width: 100vh;
-     max-width: 100%;
+    line-height: 90px;
+    width: 100vh;
+    max-width: 100%;
  }
 
 
@@ -118,6 +119,7 @@ main p {
 
 .content1a p {
     width: 100vh;
+    line-height: 90px;
 }
 
 .content2 {
@@ -193,9 +195,34 @@ footer {
 /*=========================================*/
 /*========== media query ==================*/
 /*=========================================*/
-
-@media (max-width: 600px) {
+@media (max-width: 782px) {
+header > h1 {
     
+}
+
+    .content1, .content1a {
+        width: 590px;
+    }
+    
+    
+    
+    .content1 p {
+        width: 80%;
+        line-height: 60px;
+    }
+
+    .content1a p {
+        width: 80%;
+        line-height: 60px;
+    }
+
+
+}
+
+@media (max-width: 678px) {
+    header h1 {
+        line-height: 120px;
+    }
 
     body {
         /*mudar essa cor para se orientar ao testar as caixas/bordas*/
@@ -263,9 +290,11 @@ footer {
     .content1a p {
         padding-bottom: 35px;
         width: 90%;
+        line-height: 70px;
     }
     .content1 p {
         width: 90%;
+        line-height: 70px;
     }
 
     .content2 {
