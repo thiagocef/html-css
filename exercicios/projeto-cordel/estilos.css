@@ -196,9 +196,7 @@ footer {
 /*========== media query ==================*/
 /*=========================================*/
 @media (max-width: 782px) {
-header > h1 {
-    
-}
+
 
     .content1, .content1a {
         width: 590px;
